@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Beatmaker</title>
+</head>
+
+<body>
+
+  <section class="sequencer-container">
+
+    <div class="title">
+      <h1>Beatmaker</h1>
+      <p>Click on a square to activate that sound pad. Press "Play" at the bottom when you're ready to play your beat!</p>
+    </div>
+
+    <div class="kick-track">
+      <h2 class="drum">Kick</h2>
+      <div class="kick-pads-div">
+        <div class="pad kick-pad b0"></div>
+        <div class="pad kick-pad b1"></div>
+        <div class="pad kick-pad b2"></div>
+        <div class="pad kick-pad b3"></div>
+        <div class="pad kick-pad b4"></div>
+        <div class="pad kick-pad b5"></div>
+        <div class="pad kick-pad b6"></div>
+        <div class="pad kick-pad b7"></div>
+      </div>
+    </div>
+
+    <div class="snare-track">
+      <h2 class="drum">Snare</h2>
+      <div class="snare-pads-div">
+        <div class="pad snare-pad b0"></div>
+        <div class="pad snare-pad b1"></div>
+        <div class="pad snare-pad b2"></div>
+        <div class="pad snare-pad b3"></div>
+        <div class="pad snare-pad b4"></div>
+        <div class="pad snare-pad b5"></div>
+        <div class="pad snare-pad b6"></div>
+        <div class="pad snare-pad b7"></div>
+      </div>
+    </div>
+
+    <div class="hihat-track">
+      <h2 class="drum">Hi-hat</h2>
+      <div class="hihat-pads-div">
+        <div class="pad hihat-pad b0"></div>
+        <div class="pad hihat-pad b1"></div>
+        <div class="pad hihat-pad b2"></div>
+        <div class="pad hihat-pad b3"></div>
+        <div class="pad hihat-pad b4"></div>
+        <div class="pad hihat-pad b5"></div>
+        <div class="pad hihat-pad b6"></div>
+        <div class="pad hihat-pad b7"></div>
+      </div>
+    </div>
+
+    <button class="play">Play</button>
+
+    <div class="time-signature-div">
+      <button class="time-signature-button">Change Time Signature</button>
+      <div class="time-signature-options">
+        <p class="time-sig-option-1 bold">2 bars in 4/4 - quarter note gets 1 pad</p>
+        <p class="time-sig-option-2">1 bar in 4/4 - eighth note gets 1 pad</p>
+      </div>
+    </div>
+
+    <div class="tempo">
+      <input type="range" class="tempo-slider" min="20" max="300">
+      <p>Tempo: <span class="tempo-number">150</span></p>
+    </div>
+
+    <audio class="kick-sound" src="./sounds/kick.wav"></audio>
+    <audio class="snare-sound" src="./sounds/snare.wav"></audio>
+    <audio class="hihat-sound" src="./sounds/hihat.wav"></audio>
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
